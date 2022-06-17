@@ -17,24 +17,11 @@ var app = new Vue({
         variantImage: './assets/vmSocks-blue.jpg'
       }
     ],
-    sizes: [
-      {
-        sizeId: 2234,
-        size: "23cm"
-      },
-      {
-        sizeId: 2234,
-        size: "25cm"
-      }
-    ],
-    cart: 0
+    cart: 0,
   },
   methods: {
     addToCart() {
       this.cart += 1
-    },
-    removeToCart() {
-      this.cart -= 1
     },
     updateProduct(variantImage) {
       this.image = variantImage
